@@ -8,7 +8,7 @@ contract HelloWorld {
   }
 
   function setMessage(string memory newMessage) public payable {
-    require(msg.value >= 1 ether, 'Sender must pay at least one ether');
+    // require(msg.value >= 1000000 wei, 'Sender must pay at least 1000000 wei');
     message = newMessage;
   }
 }
